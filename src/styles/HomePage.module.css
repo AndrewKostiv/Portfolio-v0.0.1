@@ -1,0 +1,10 @@
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: min(700px, 90%);
+  background-color: rgb(37, 32, 32);
+  color: white;
+  border-radius: 10px;
+}

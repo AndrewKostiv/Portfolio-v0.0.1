@@ -4,20 +4,21 @@ nav {
   gap: 8px;
   padding: 8px 8px;
   color: white;
-  background-color: #333;
+  background-color: var(--primary-color);
+  border-bottom: solid 1px var(--border-color);
   overflow: hidden;
   box-sizing: border-box;
 }
 
 nav a {
   color: white;
-  background-color: #594949;
   text-align: center;
-  padding: 8px 8px;
   text-decoration: none;
+  transition: 100ms ease-in-out;
+  padding: 8px 8px;
   font-size: 17px;
   border-radius: 5px;
-  transition: 100ms ease-in-out;
+  background-color: var(--card-color);
 }
 
 nav a:hover {

@@ -1,0 +1,25 @@
+import React from "react";
+import NavBar from "../../components/Navbar/NavBar";
+import style from "./HomePage.module.css";
+import Projects from "../../components/Projects/Projects";
+import Skills from "../../components/Skills/Skills";
+
+export default function HomePage() {
+  return (
+    <div className={style.main}>
+      {/* <NavBar /> */}
+      <br />
+      <br />
+      <div className={style.HomePage}>
+        <h1>Andrew Kostiv</h1>
+        <p>Front end software engineer</p>
+        <p>Syracuse NY / Binghamton NY</p>
+      </div>
+      <Skills />
+      <Projects />
+      <br />
+      <br />
+      <br />
+    </div>
+  );
+}

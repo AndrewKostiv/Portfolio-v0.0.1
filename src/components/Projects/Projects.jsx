@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Projects.module.css";
+import airsoftToolsImg from "/src/assets/airsoft-tools-image.png";
 
 const projects = [
   {
@@ -7,7 +8,7 @@ const projects = [
     description: "Generates random teams from a list of players",
     gitHubLink: "https://github.com/AndrewKostiv/Airsoft-Tools",
     projectLink: "https://airsoft-tools.vercel.app",
-    imgPath: "src/assets/Airsoft Tools Image.png",
+    imgPath: airsoftToolsImg,
   },
 ];
 

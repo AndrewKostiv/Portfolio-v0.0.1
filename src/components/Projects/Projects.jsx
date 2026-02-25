@@ -7,7 +7,7 @@ const projects = [
     description: "Generates random teams from a list of players",
     gitHubLink: "https://github.com/AndrewKostiv/Airsoft-Tools",
     projectLink: "https://airsoft-tools.vercel.app",
-    imgPath: "./public/Airsoft Tools Image.png",
+    imgPath: "public/Airsoft Tools Image.png",
   },
 ];
 

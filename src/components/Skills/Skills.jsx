@@ -3,19 +3,25 @@ import style from "./Skills.module.css";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 
+const skills = [
+  {
+    name: "React",
+    icon: <FaReact color="#61DBFB" size={"40px"} />,
+  },
+  {
+    name: "JavaScript",
+    icon: <IoLogoJavascript color="#F0DB4F" size={"40px"} />,
+  },
+];
+
 export default function Skills() {
   return (
     <div className={style.Skills}>
       <h2>Tools and Technologies</h2>
       <div>
-        <Skill
-          skillName={"React"}
-          icon={<FaReact color="#61DBFB" size={"40px"} />}
-        />
-        <Skill
-          skillName={"JavaScript"}
-          icon={<IoLogoJavascript color="#F0DB4F" size={"40px"} />}
-        />
+        {skills.map((skill) => (
+          <Skill key={skill.name} skillName={skill.name} icon={skill.icon} />
+        ))}
       </div>
     </div>
   );

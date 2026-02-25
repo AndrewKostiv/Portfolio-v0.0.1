@@ -1,34 +1,54 @@
 import React from "react";
 import style from "./Projects.module.css";
+
+const projects = [
+  {
+    name: "Airsoft Tools",
+    description: "Generates random teams from a list of players",
+    gitHubLink: "https://github.com/AndrewKostiv/Airsoft-Tools",
+    projectLink: "https://airsoft-tools.vercel.app",
+    imgPath: "./public/Airsoft Tools Image.png",
+  },
+];
+
 export default function Projects() {
   return (
     <div className={style.Projects}>
       <h2>Projects</h2>
       <div>
-        <Project
-          projectName={"Airsoft Tools"}
-          description={"Generates random teams from a list of players"}
-          gitHubLink={"https://github.com/AndrewKostiv/Airsoft-Tools"}
-          link={"https://airsoft-tools.vercel.app"}
-          img={"./public/Airsoft Tools Image.png"}
-        />
+        {projects.map((project) => (
+          <Project
+            key={project.name}
+            projectName={project.name}
+            description={project.description}
+            gitHubLink={project.gitHubLink}
+            projectLink={project.projectLink}
+            imgPath={project.imgPath}
+          />
+        ))}
       </div>
     </div>
   );
 }
 
-export function Project({ projectName, description, gitHubLink, link, img }) {
+export function Project({
+  projectName,
+  description,
+  gitHubLink,
+  projectLink,
+  imgPath,
+}) {
   return (
-    <a href={link} target="_black" className={style.Project}>
+    <div className={style.Project}>
       <h3>{projectName}</h3>
       <p>{description}</p>
       <a className={style.gitHubLink} target="_blank" href={gitHubLink}>
         GitHub Link
       </a>
-      <a className={style.projectLink} href={link} target="_blank">
+      <a className={style.projectLink} href={projectLink} target="_blank">
         <p>Project Link:</p>
-        <img src={img} alt={projectName} />
+        <img src={imgPath} alt={projectName} />
       </a>
-    </a>
+    </div>
   );
 }

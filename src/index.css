@@ -1,9 +1,9 @@
 :root {
   --primary-color: rgb(85, 79, 79);
-  --background-color: rgb(46, 48, 44);
+  --background-color: rgb(48, 44, 44);
   --text-color: white;
   --border-color: rgb(255, 255, 255);
-  --card-color: rgb(61, 61, 61);
+  --card-color: rgb(40, 35, 35);
 }
 
 body {

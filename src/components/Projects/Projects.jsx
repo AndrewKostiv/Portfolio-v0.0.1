@@ -5,20 +5,21 @@ export default function Projects() {
     <div className={style.Projects}>
       <h2>Projects</h2>
       <div>
-        Projects have not been listed yet
-        {/* <Project></Project>
-        <Project></Project>
-        <Project></Project> */}
+        <Project
+          projectName={"Airsoft Tools"}
+          description={"Generates random teams from a list of players"}
+          link={"https://github.com/AndrewKostiv/Airsoft"}
+        />
       </div>
     </div>
   );
 }
 
-export function Project() {
+export function Project({ projectName, description, link }) {
   return (
-    <div className={style.Project}>
-      <h3>project1</h3>
-      <p>description</p>
-    </div>
+    <a href={link} target="_black" className={style.Project}>
+      <h3>{projectName}</h3>
+      <p>{description}</p>
+    </a>
   );
 }

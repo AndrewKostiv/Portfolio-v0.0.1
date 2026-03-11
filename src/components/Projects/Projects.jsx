@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Projects.module.css";
 import airsoftToolsImg from "/src/assets/airsoft-tools-image.png";
+import SmallCard from "../Utils/SmallCard/SmallCard";
 
 const projects = [
   {
@@ -40,16 +41,18 @@ export function Project({
   imgPath,
 }) {
   return (
-    <div className={style.Project}>
-      <h3>{projectName}</h3>
-      <p>{description}</p>
-      <a className={style.gitHubLink} target="_blank" href={gitHubLink}>
-        GitHub Link
-      </a>
-      <a className={style.projectLink} href={projectLink} target="_blank">
-        <p>Project Link:</p>
-        <img src={imgPath} alt={projectName} />
-      </a>
-    </div>
+    <SmallCard>
+      <div className={style.Project}>
+        <h3>{projectName}</h3>
+        <p>{description}</p>
+        <a className={style.gitHubLink} target="_blank" href={gitHubLink}>
+          GitHub Link
+        </a>
+        <a className={style.projectLink} href={projectLink} target="_blank">
+          <p>Project Link:</p>
+          <img src={imgPath} alt={projectName} />
+        </a>
+      </div>
+    </SmallCard>
   );
 }

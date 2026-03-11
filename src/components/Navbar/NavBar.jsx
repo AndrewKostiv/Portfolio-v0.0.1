@@ -4,9 +4,10 @@ import style from "./NavBar.module.css";
 
 export default function NavBar() {
   return (
-    <nav>
+    <nav className={style.navBar}>
       <NavLink to="/">Home Page</NavLink>
-      <NavLink to="/Page1">Page 1</NavLink>
+      <NavLink to="/About">About</NavLink>
+      <NavLink to="/Contact">Contact</NavLink>
     </nav>
   );
 }

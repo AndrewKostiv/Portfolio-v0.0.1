@@ -2,6 +2,8 @@ import React from "react";
 import style from "./Skills.module.css";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
+import SmallCard from "../Utils/SmallCard/SmallCard";
+import BigCard from "../Utils/BigCard/BigCard";
 
 const skills = [
   {
@@ -16,22 +18,26 @@ const skills = [
 
 export default function Skills() {
   return (
-    <div className={style.Skills}>
-      <h2>Tools and Technologies</h2>
-      <div>
-        {skills.map((skill) => (
-          <Skill key={skill.name} skillName={skill.name} icon={skill.icon} />
-        ))}
+    <BigCard>
+      <div className={style.Skills}>
+        <h2>Tools and Technologies</h2>
+        <div>
+          {skills.map((skill) => (
+            <Skill key={skill.name} skillName={skill.name} icon={skill.icon} />
+          ))}
+        </div>
       </div>
-    </div>
+    </BigCard>
   );
 }
 
 export function Skill({ skillName, icon }) {
   return (
-    <div className={style.Skill}>
-      <h3>{skillName}</h3>
-      {icon}
-    </div>
+    <SmallCard>
+      <div className={style.skill}>
+        <h3>{skillName}</h3>
+        {icon}
+      </div>
+    </SmallCard>
   );
 }

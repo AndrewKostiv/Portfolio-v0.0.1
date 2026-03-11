@@ -1,0 +1,13 @@
+.smallCard {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  min-width: 50px;
+  padding: 0 10px;
+  padding-bottom: 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  border: 1px solid var(--border-color);
+  background-color: var(--card-color);
+}

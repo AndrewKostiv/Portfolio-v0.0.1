@@ -1,0 +1,12 @@
+.bigCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px;
+  width: min(700px, 90%);
+  background-color: var(--primary-color);
+  border: 1px solid black;
+}

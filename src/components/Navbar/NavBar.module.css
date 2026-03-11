@@ -1,4 +1,4 @@
-nav {
+.navBar {
   display: flex;
   width: 100%;
   gap: 8px;
@@ -10,7 +10,7 @@ nav {
   box-sizing: border-box;
 }
 
-nav a {
+.navBar a {
   color: white;
   text-align: center;
   text-decoration: none;
@@ -21,15 +21,15 @@ nav a {
   background-color: var(--card-color);
 }
 
-nav a:hover {
+.navBar a:hover {
   box-shadow: inset 0 0 10px #000000;
 }
 
-nav a.active {
+.navBar a.active {
   background-color: #04aa6d;
   color: white;
 }
 
-nav a.visited {
+.navBar a.visited {
   color: purple;
 }

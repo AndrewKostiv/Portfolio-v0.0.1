@@ -7,9 +7,7 @@ import Skills from "../../components/Skills/Skills";
 export default function HomePage() {
   return (
     <div className={style.main}>
-      {/* <NavBar /> */}
-      <br />
-      <br />
+      <NavBar />
       <div className={style.HomePage}>
         <h1>Andrew Kostiv</h1>
         <p>Front end software engineer</p>
@@ -17,8 +15,6 @@ export default function HomePage() {
       </div>
       <Skills />
       <Projects />
-      <br />
-      <br />
       <br />
     </div>
   );

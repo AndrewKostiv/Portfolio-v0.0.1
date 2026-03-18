@@ -8,13 +8,6 @@ export default function HomePage() {
   return (
     <div className={style.main}>
       <NavBar />
-      <div className={style.HomePage}>
-        <h1>Andrew Kostiv</h1>
-        <p>Front end software engineer</p>
-        <p>Syracuse NY / Binghamton NY</p>
-      </div>
-      <Skills />
-      <Projects />
       <br />
     </div>
   );

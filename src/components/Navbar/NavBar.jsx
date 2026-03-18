@@ -1,13 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router";
-import style from "./NavBar.module.css";
+import HomePage from "../../pages/HomePage/HomePage.jsx";
+import AboutPage from "../../pages/AboutPage/AboutPage.jsx";
 
 export default function NavBar() {
   return (
-    <nav className={style.navBar}>
-      <NavLink to="/">Home Page</NavLink>
-      <NavLink to="/About">About</NavLink>
-      <NavLink to="/Contact">Contact</NavLink>
+    <nav>
+      <NavLink index element={<HomePage />}>
+        Home
+      </NavLink>
+      <NavLink to={"/about"} element={<AboutPage />}>
+        About
+      </NavLink>
     </nav>
   );
 }

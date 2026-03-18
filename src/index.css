@@ -6,11 +6,20 @@
   --card-color: rgb(40, 35, 35);
 }
 
+html {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: var(--background-color);
+  background-image: url("../public/Background.jpg");
+}
+
 body {
+  scrollbar-gutter: stable;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
   color: var(--text-color);
-  overflow-x: hidden;
+  text-shadow: 1px 1px 1px black;
 }

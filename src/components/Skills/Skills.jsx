@@ -14,6 +14,16 @@ const skills = [
     name: "JavaScript",
     icon: <IoLogoJavascript color="#F0DB4F" size={"40px"} />,
   },
+  {
+    name: "Vercel",
+    icon: (
+      <img
+        src="./public/vercel_icon.png"
+        alt="vercel"
+        style={{ size: "0px" }}
+      />
+    ),
+  },
 ];
 
 export default function Skills() {
